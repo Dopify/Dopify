@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dopify</title>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .dopifylogoAcontainer {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .dopifylogoA {
+            width: 130px;
+            height: 130px;
+            border: 2px #8E0DB4 solid;
+            border-radius: 100%;
+            animation-name: loading-border;
+            animation-duration:1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            padding: 0px;
+            position: fixed;
+
+        }
+
+        @keyframes loading-border {
+            from{
+                padding: 0px;
+            }
+            to{
+                padding: 50px;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: 100vh;
+            background-color: aqua;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+   <div class="dopifylogoAcontainer">
+    <img src="Dopify.png" class="dopifylogoA">
+    </div>
+    <div class="content">
+        hello
+    </div>
+</body>
+</html>
