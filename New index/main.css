@@ -1,0 +1,285 @@
+body {
+    margin:13px;
+    height: auto;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 25vw 70vw;
+    height: 100vh;
+    gap: 10px;
+}
+
+.leftside {
+    background-color: transparent;
+    width: 100%;
+    height: 300vh;
+}
+
+.rightside {
+    background-color: #121313;
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 0;
+    margin-bottom: 15px;
+}
+
+.tophitgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.dopifytophits {
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: arial;
+    color: white;
+    font-weight: 600;
+}
+
+.anchor {
+    width: 20vw;
+    position: relative;
+    text-decoration: none;
+}
+
+.tophitcover {
+    width: 20vw;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tophitname {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: arial;
+    font-weight: 550;
+}
+
+.tophitbio {
+    margin: 0;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: white;
+    font-family: arial;
+}
+
+.style {
+    height: auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.img1 {
+    width:250px ;
+    height: 160px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project1 {
+    position: relative;
+}
+
+.button1 {
+    width: 250px;
+    height: 160px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    border: none;
+    color: white;
+    opacity: 1;
+    font-family: arial;
+    font-weight: 600;
+    transition: opacity 0.5s;
+    border: none;
+    border-radius: 10px;
+}
+
+.button1:hover {
+    opacity: 0;   
+}
+
+.img2 {
+    width:200px ;
+    height: 250px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project2 {
+    position: relative;
+}
+
+.button2 {
+    width: 200px;
+    height: 250px;
+    position:absolute;
+    top: 0;
+    margin-left: 8px;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    opacity: 1;
+    font-family: arial;
+    font-weight: 600;
+    transition: opacity 0.5s;
+    border: none;
+    border-radius: 10px;
+}
+
+.button2:hover {
+    opacity: 0;   
+}
+
+.img3 {
+    width:220px ;
+    height: 180px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project3 {
+    position: relative;
+}
+
+.button3 {
+    width: 220px;
+    height: 180px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    opacity: 1;
+    font-family: arial;
+    font-weight: 600;
+    transition: opacity 0.5s;
+    border: none;
+    border-radius: 10px;
+}
+
+.button3:hover {
+    opacity: 0;   
+}
+.img4 {
+    width:300px ;
+    height: 250px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.project4 {
+    position: relative;
+}
+
+.button4 {
+    width: 300px;
+    margin-left: 8px;
+    height: 250px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    opacity: 1;
+    font-family: arial;
+    font-weight: 600;
+    transition: opacity 0.5s;
+    border: none;
+    border-radius: 10px;
+}
+
+.button4:hover {
+    opacity: 0;   
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.coverbutton {
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20.1vw;
+    width: 20vw;
+    background-color: rgba(0,0,0,0.3);
+    transition: background-color 0.5s;
+}
+
+.coverbutton:hover {
+    background-color: transparent;
+}
+
+.credits {
+    width: 100%;
+    height: 5vh;
+    background-color:  #8E0DB4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.yashlgn, .aniketsharmagit56 {
+    font-size: 15px;
+    font-family: arial;
+    font-weight: 600;
+    color: black;
+}
+
+.credits2 {
+    width: 98%;
+    height: 75vh;
+    background-color:  #8E0DB4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+
+.thank, .visiting {
+    font-size: 80px;
+    font-family: arial;
+    font-weight: 600;
+    color: black;
+}
+
+.visiting {
+    text-align: right;
+    padding-right: 15px;
+}
