@@ -30,7 +30,7 @@ body {
 
 .tophitgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: auto;
     height: auto;
     margin-left: 30px;
@@ -46,13 +46,13 @@ body {
 }
 
 .anchor {
-    width: 20vw;
+    width: 10rem;
     position: relative;
     text-decoration: none;
 }
 
 .tophitcover {
-    width: 20vw;
+    width: 10vw;
     height: auto;
     border-radius: 10px;
 }
