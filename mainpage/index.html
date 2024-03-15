@@ -42,15 +42,17 @@
         <div class="rightside">
 
             <p class="dopifytophits">Dopify Top Hits</p>
-            <div class="tophitgrid">
+            <div id="tophitss" class="tophitgrid">
 
-                <a class="anchor" href=""><img class="tophitcover" src="coverr images\doubletake.jpeg">
+                <a class="anchor" href="">
+                    <img class="tophitcover" src="coverr images\doubletake.jpeg">
                     <button class="coverbutton"></button>
                     <p class="tophitname">Double Take</p>
                     <p class="tophitbio">By Dhruv Sharma</p>
                 </a>
 
-                <a class="anchor" href=""><img class="tophitcover" src="coverr images\ecstacy.jpeg">
+                <a class="anchor" href="">
+                    <img class="tophitcover" src="coverr images\ecstacy.jpeg">
                     <button class="coverbutton"></button>
                     <p class="tophitname">Ecstacy</p>
                     <p class="tophitbio">By Suicidal.Idol</p>
@@ -71,12 +73,14 @@
                     <button class="coverbutton"></button>
                     <p class="tophitname">Kya Mujhe Pyar</p>
                     <p class="tophitbio">by Dj Vicky</p>
+                </a>
 
-                    <a class="anchor" href=""><img class="tophitcover" src="coverr images\goldenhour.jpeg">
-                        <button class="coverbutton"></button>
-                        <p class="tophitname">Golden Hour</p>
-                        <p class="tophitbio">By JVKE</p>
-                    </a>
+
+                <a class="anchor" href=""><img class="tophitcover" src="coverr images\goldenhour.jpeg">
+                    <button class="coverbutton"></button>
+                    <p class="tophitname">Golden Hour</p>
+                    <p class="tophitbio">By JVKE</p>
+                </a>
 
             </div>
 
@@ -165,5 +169,29 @@
         </div>
 
 </body>
+<script>
+    var tophitss = document.querySelector("#tophitss");
+    //send an http request
+    var i =0;
+    while (1) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "http://0.0.0.0:18080/songs/" + i, false); // false for synchronous request
+        xmlHttp.send(null);
+        if(xmlHttp.responseText == "END OF DATA"){
+            break
+        }
+        console.log(xmlHttp.responseText);
+        var song = JSON.parse(xmlHttp.responseText);
+        var name = song.name;
+        var artist = song.artist;
+        tophitss.innerHTML += '<a class="anchor" href="">\n' +
+            '    <img class="tophitcover" src="coverr images\\doubletake.jpeg">\n' +
+            '    <button class="coverbutton"></button>\n' +
+            '    <p class="tophitname">'+name+'</p>\n' +
+            '    <p class="tophitbio">By Dhruv Sharma</p>\n' +
+            '</a>';
+            i++
+    }
+</script>
 
 </html>
